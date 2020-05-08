@@ -1,0 +1,138 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    /*color: floralwhite !important;*/
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+   
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+
+.home-content{
+    flex:auto;
+    position: relative;
+    z-index: 5;
+}
+
+.raise-forward{
+    z-index: 5;
+}
+
+.bg-landing-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../imgs/building_edited_reduced_jpg85_1080.jpg') no-repeat center;
+    background-size: cover;
+    z-index: 0;
+    overflow:hidden;
+    padding-bottom: 60px;
+}
+
+
+.nav-custom{
+    z-index: 1;
+    background-color: rgba( 0,0,0, 0.5) !important;
+}
+
+.btn-enroll-custom {
+    /*border-radius: 5px 5px 20px 5px !important;*/
+}
+
+
+
+
+/*
+.sect-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgba(255,255,255, 1);
+    padding: 0 20px;
+    background-color: rgba(0,0,0, .5);
+}*/
+
+/*
+.sect-content-container {
+    background-image: url("../imgs/building_edited_reduced_jpg85_1080.jpg"); 
+    height: 100%;
+    width: 100%;
+    /* Center and scale the image nicely 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    */
+    /*
+.nav-custom {
+    z-index: 0;
+} */
