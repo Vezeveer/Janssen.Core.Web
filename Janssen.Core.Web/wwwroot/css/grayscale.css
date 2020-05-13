@@ -25,7 +25,7 @@
 #mainNav .navbar-brand {
   color: #161616;
   font-weight: 700;
-  padding: .9rem 0;
+  padding: .1rem 0;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -114,11 +114,29 @@
   font-size: 1rem;
 }
 
+/*.logo-wide {
+    width: 100%;
+    float: left;
+}
+
+.logo-wide > div {
+    float: right;
+}
+
+.logo-narrow > p {
+    color: red !important;
+}
+
+.logo-narrow {
+    display: none !important;
+}*/
+
 @media (min-width: 768px) {
   .masthead h1 {
     font-size: 4rem;
     line-height: 4rem;
   }
+ 
 }
 
 @media (min-width: 992px) {
