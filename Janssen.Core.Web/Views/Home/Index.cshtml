@@ -1,5 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var brochurePdf = "pdfs/brochure0123SAJCTI.pdf";
+    var enrollFormPdf = "pdfs/enroll0123form.pdf";
 }
 
 
@@ -31,7 +33,7 @@
             <h1 class="mx-auto my-auto text-uppercase main-heading">Saint Arnold Janssen College of Tacloban, Inc.</h1>
             <h2 class="text-white-50 mx-auto mt-2 mb-5">Creating Professionals</h2>
             <a href="#" class="btn btn-secondary js-scroll-trigger disabled">Enroll</a>
-            <a href="~/pdfs/sajcti_fold_brochure.pdf" class="btn btn-primary js-scroll-trigger" target="_blank">Brochure</a>
+            <a href=@brochurePdf class="btn btn-primary js-scroll-trigger" target="_blank">Brochure</a>
         </div>
     </div>
 </header>
@@ -48,89 +50,96 @@
                         [Under Construction] Random words here but will add something later on.
                         <a href="#">something here</a>. More info coming soon.
                     </p>*@
-                <h2 class="text-white mb-4">MISSION</h2>
-                <p class="text-white-50">
-                    Saint Arnold Janssen College of Tacloban, Inc. (SAJCTI),
-                    the Prime Catholic Educational Institution of
-                    Religion 08 in developing learners to be
-                    Problem-Solvers, Moral leaders in Service to
-                    Others, Creators of a more Humane and Just
-                    World and Champions of Christ who are grounded
-                    in God's word.
-                </p>
+
                 <h2 class="text-white mb-4">VISION</h2>
-                <p class="text-white-50">
-                    Saint Arnold Janssen College of Tacloban, Inc. (SAJCTI)
-                    as a Catholic Institution of Learning, embodies the ideals
-                    of Spirituality and Charism of St. Arnold Janssen, SVD,
-                    the founder of Society of the Divine Word (Societas Verbi Divini).
-                    <br />
-                    <br />
+            <p class="text-white-50">
+                Saint Arnold Janssen College of Tacloban, Inc. (SAJCTI),
+                envisage globally competitive, productive and skilled
+                professionals and servant-leaders, fortified with the ideals,
+                Charism and Spirituality of Saint Arnold Janssen, founder of
+                the Society of the Divine Word.
+                <br />
+                <br />
 
-                    As an institution, it aims to produce globally
-                    competent and productive professionals, and
-                    skilled Servant-leaders through dynamic, excellent
-                    and Christ-centered, contexualized integration of
-                    instruction, research and extension services.
-                    <a href="#"></a>
-                </p>
-                <h2 class="text-white mb-4">CORE VALUES: [I RESET]</h2>
-                <p class="text-white-50">
-                    Integrity <br />
-                    Responsibility<br />
-                    Excellence <br />
-                    Spirituality <br />
-                    Ecological Justice <br />
-                    Transformation <br />
-                    <br />
-                    <b>MOTTO:</b> <br />
-                    Servamus - Virtus - Devotio
-                </p>
-            </div>
+                As an institution, it aims to produce globally
+                competent and productive professionals, and
+                skilled Servant-leaders through dynamic, excellent
+                and Christ-centered, contexualized integration of
+                instruction, research and extension services.
+                <a href="#"></a>
+            </p>
+
+            <h2 class="text-white mb-4">MISSION</h2>
+            <p class="text-white-50">
+                SAJCTI, the Prime Catholic Institution of Region 8
+                aims to produce graduates who are grounded in God's
+                word through dynamic, excellent and contextualized
+                integration of instruction, research and extension services,
+                and are:
+                <br />
+                <br />
+                a. Problem-solvers and moral servant-leaders; <br />
+                b. Innovators and collaborators; and <br />
+                c. Agents of change for a more Humane and Just World.
+            </p>
+
+            <h2 class="text-white mb-4">CORE VALUES: [I RESET]</h2>
+            <p class="text-white-50">
+                Integrity <br />
+                Responsibility and Accountability<br />
+                Excellence <br />
+                Spirituality <br />
+                Environmental Justice <br />
+                Transformation <br />
+                <br />
+                <b>MOTTO:</b> <br />
+                Servamus - Virtus - Devotio
+            </p>
         </div>
-        <br />
-        <br />
+    </div>
+    <br />
+    <br />
 
-        <div class="row">
-            <div class=" col-sm">
-                <img src="~/imgs/janssen_seal_logo_large.png" class="img-fluid" alt="">
-                <br />
-                <br />
-                <br />
-            </div>
-
-            <div class="col-sm">
-                <h2 class="text-white">The Logo</h2>
-                <p class="text-white-50">
-                    The SAJCTI logo embodies the ideals  of the college as a religious missionary higher education institution. <br /><br />
-                    The Ropes denote the Universality of the Church (outer) and the binds of SVD Charism (inner). <br /><br />
-                    The Golden Star hints the Dawning Birth of SAJCTI. The Green Twin-stars shine both for Saint Arnold Janssen and Saint Joseph Freinademetz. <br /><br />
-                    The lit Torch and the Laurel, respectively, symbolize the universal quest for Intellect and Soul Nourishments propelled by the perpetual invitation to “Witness to the Word” in pursuit of Excellence for the success of students/management/stakeholders. <br />
-
-                </p>
-            </div>
+    <div class="row">
+        <div class=" col-sm">
+            <img src="~/imgs/janssen_seal_logo_large.png" class="img-fluid" alt="">
+            <br />
+            <br />
+            <br />
         </div>
 
-        @*<div class="logo-narrow">
-                <img src="~/imgs/janssen_seal_logo_large.png" class="img-fluid" alt="">
-                <br />
-                <br />
-                <br />
-                <h2 class="text-white">The Logo</h2>
-                <p class="logo-text text-white-50">
-                    The SAJCTI logo embodies the ideals  of the college as a religious missionary higher education institution. <br /><br />
-                    The Ropes denote the Universality of the Church (outer) and the binds of SVD Charism (inner). <br /><br />
-                    The Golden Star hints the Dawning Birth of SAJCTI. The Green Twin-stars shine both for Saint Arnold Janssen and Saint Joseph Freinademetz. <br /><br />
-                    The lit Torch and the Laurel, respectively, symbolize the universal quest for Intellect and Soul Nourishments propelled by the perpetual invitation to “Witness to the Word” in pursuit of Excellence for the success of students/management/stakeholders. <br />
+        <div class="col-sm">
+            <h2 class="text-white">The Logo</h2>
+            <p class="text-white-50">
+                The SAJCTI logo embodies the ideals  of the college as a religious missionary higher education institution. <br /><br />
+                The Ropes denote the Universality of the Church (outer) and the binds of SVD Charism (inner). <br /><br />
+                The Golden Star hints the Dawning Birth of SAJCTI. The Green Twin-stars shine both for Saint Arnold Janssen and Saint Joseph Freinademetz. <br /><br />
+                The lit Torch and the Laurel, respectively, symbolize the universal quest for Intellect and Soul Nourishments propelled by the perpetual invitation to “Witness to the Word” in pursuit of Excellence for the success of students/management/stakeholders. <br />
 
-                </p>
-            </div>*@
+            </p>
+        </div>
+    </div>
 
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+    @*<div class="logo-narrow">
+            <img src="~/imgs/janssen_seal_logo_large.png" class="img-fluid" alt="">
+            <br />
+            <br />
+            <br />
+            <h2 class="text-white">The Logo</h2>
+            <p class="logo-text text-white-50">
+                The SAJCTI logo embodies the ideals  of the college as a religious missionary higher education institution. <br /><br />
+                The Ropes denote the Universality of the Church (outer) and the binds of SVD Charism (inner). <br /><br />
+                The Golden Star hints the Dawning Birth of SAJCTI. The Green Twin-stars shine both for Saint Arnold Janssen and Saint Joseph Freinademetz. <br /><br />
+                The lit Torch and the Laurel, respectively, symbolize the universal quest for Intellect and Soul Nourishments propelled by the perpetual invitation to “Witness to the Word” in pursuit of Excellence for the success of students/management/stakeholders. <br />
+
+            </p>
+        </div>*@
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 
     </div>
 </section>
@@ -194,7 +203,7 @@
 </section>
 
 <!--REQUIREMENTS, shares about section css-->
-<section id="requirements" class="about-section text-center">
+<section id="requirements" class="about-section text-center requirements-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
@@ -214,10 +223,11 @@
                 <p class="text-white-50">
                     Form 138 (photocopy) - Grade 12 completer<br />
                     "PASSED" mid-term ratings (Certified by School)<br />
-                    Filled-in Application form<br />
+                    Filled-in Application <a href=@enrollFormPdf target="_blank">form</a> <a href=@enrollFormPdf target="_blank">(enrollment_form.pdf)</a><br />
                     2 pcs passport size ID picture<br />
                     Testing fee 300.00 pesos
                 </p>
+
             </div>
         </div>
     </div>
@@ -239,8 +249,7 @@
 
                 @*<div class="btn btn-primary mx-auto">Enroll</div>*@
                 <div class="btn btn-secondary disabled">Enroll</div>
-                <div onclick="toggleRequirements()" class="btn btn-primary mx-auto">Requirements</div>
-                <a href="~/pdfs/sajcti_fold_brochure.pdf" target="_blank" class="btn btn-primary mx-auto">Brochure</a>
+                <a href=@brochurePdf target="_blank" class="btn btn-primary mx-auto">Brochure</a>
 
 
             </div>
@@ -296,7 +305,7 @@
             </div>
         </div>
 
-        
+
         <div class="social d-flex justify-content-center">
             @*<a href="#" class="mx-2">
                     <i class="fab fa-twitter"></i>
