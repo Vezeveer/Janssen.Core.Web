@@ -15,10 +15,21 @@
     <!-- Custom styles for this template -->
     <link href="~/css/grayscale.css" rel="stylesheet">
     <link href="~/css/custom.css" rel="stylesheet">
-
+   
 </head>
 
 <body id="page-top">
+
+    <!-- Loading square for squar.red network -->
+    <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        <br class="nojavascript"/>
+        <p class="nojavascript">
+            Your browser does not support JavaScript! <br />
+            To view this page enable javascript or use another browser, <br />
+            or another device like a computer or phone capable of javascript.
+        </p>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -115,6 +126,20 @@
     <!-- Custom scripts for this template -->
     <script src="~/js/grayscale.js"></script>
     <script src="~/js/site.js"></script>
+    <script>
+        $(window).on("load", function () {
+            window.location.href = "#"
+            $(".loader-wrapper").fadeOut("slow");
+            enableScrolling();
+        });
+    </script>
+    <noscript>
+        <style>
+            .nojavascript {
+                display: block;
+            }
+        </style>
+    </noscript>
 
     @RenderSection("Scripts", required: false)
 </body>
