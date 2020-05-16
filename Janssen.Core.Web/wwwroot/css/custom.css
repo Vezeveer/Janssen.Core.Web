@@ -1,10 +1,34 @@
 ﻿
+/*@font-face {
+    font-family: 'castellar';
+    src: url('../castellar.ttf') format('truetype');
+}*/
 
-.photobanner-crimlab {
-    height: 479px;
-    width: 2540px;
-    /*margin-bottom: 80px;*/
+.headings-cs{
+    display: flex;
+    justify-content: center;
 }
+    .headings-cs > img {
+        opacity: .5;
+        height: 75%;
+        
+    }
+    .headings-cs > h2 {
+        font-family: Castellar;
+    }
+    .heading-mission > img {
+        height: 50% !important;
+    }
+.vine-mission {
+    height: 50px;
+    transform: scaleX(-1);
+}
+
+    .photobanner-crimlab {
+        height: 479px;
+        width: 2540px;
+        /*margin-bottom: 80px;*/
+    }
 
 /*keyframe animations*/
 .first {
