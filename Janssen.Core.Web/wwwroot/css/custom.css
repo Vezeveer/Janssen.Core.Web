@@ -10,17 +10,20 @@
 }
     .headings-cs > img {
         opacity: .5;
-        height: 75%;
-        
     }
+.heading-vision > img {
+    height: 42px;
+    width: 140px;
+}
     .headings-cs > h2 {
         font-family: Castellar;
     }
-    .heading-mission > img {
-        height: 50% !important;
-    }
+.heading-mission > img {
+    opacity: .5;
+    width: 100px;
+    height: 37px;
+}
 .vine-mission {
-    height: 50px;
     transform: scaleX(-1);
 }
 
@@ -29,14 +32,25 @@
         width: 2540px;
         /*margin-bottom: 80px;*/
     }
+    .photobanner-mootcourt{
+        height: 500px;
+        width: 1334px;
+    }
 
 /*keyframe animations*/
-.first {
+.first{
     /*-webkit-animation: bannermove 60s linear infinite;
     -moz-animation: bannermove 60s linear infinite;
     -ms-animation: bannermove 60s linear infinite;
     -o-animation: bannermove 60s linear infinite;*/
     animation: bannermove 60s linear infinite;
+}
+.first-2 {
+    /*-webkit-animation: bannermove 60s linear infinite;
+    -moz-animation: bannermove 60s linear infinite;
+    -ms-animation: bannermove 60s linear infinite;
+    -o-animation: bannermove 60s linear infinite;*/
+    animation: bannermove-2 25s linear infinite;
 }
 
 @keyframes bannermove {
@@ -45,6 +59,20 @@
     50% {
         margin-left: -1865px;
     }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes bannermove-2 {
+    0% {
+        margin-left: 0px;
+    }
+
+    50% {
+        margin-left: -667px;
+    }
+
     100% {
         margin-left: 0px;
     }
