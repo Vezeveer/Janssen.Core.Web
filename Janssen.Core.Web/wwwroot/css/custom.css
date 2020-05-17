@@ -4,6 +4,60 @@
     src: url('../castellar.ttf') format('truetype');
 }*/
 
+.logo-link {
+    color: #131313;
+}
+
+
+
+    .logo-link:hover {
+        color: #333;
+    }
+
+.logo-line {
+    background-color: #131313;
+    position: absolute;
+    width: 127px;
+    height: 1px;
+    top: 32px;
+    left: 68px;
+}
+
+.logo-block-container {
+    display: grid;
+    text-decoration: none;
+    grid-gap: 2px;
+}
+.logo-block-1{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2
+}
+.logo-block-2 {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+    font-family: 'castellar';
+    font-size: 33px;
+    margin: 0;
+    padding: 0;
+    line-height: 35px;
+    text-align: center;
+    height: 35px !important;
+    width: 130px;
+}
+.logo-block-3 {
+    margin-top: 4px;
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 2;
+    font-family: 'castellar';
+    line-height: 12.5px;
+    font-size: 10px;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    height: 25px !important;
+    width: 130px;
+    text-align: center;
+}
+
 .headings-cs {
     display: flex;
     justify-content: center;
@@ -18,7 +72,7 @@
     width: 140px;
 }
 
-.headings-cs > h2 {
+.headings-cs > h2, .heading-corevalues {
     font-family: Castellar;
 }
 
@@ -196,6 +250,12 @@
 }
 
 @media (min-width: 992px) {
+    .logo-link {
+        color: #fff;
+    }
+    .logo-line {
+        background-color: #fff;
+    }
     .computer-lab-bg {
         background: url('../imgs/computerlab/computer_lab_1080.jpg');
         background-position: center;

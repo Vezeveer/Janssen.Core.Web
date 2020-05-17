@@ -1,5 +1,5 @@
 ﻿@{
-    string version = "1.2";
+    string version = "1.3";
 
     string siteJsVersion = "/js/site.js?v=" + version;
     string grayscaleJsVersion = "/js/grayscale.js?v=" + version;
@@ -11,6 +11,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <meta name="description" content="Saint Arnold Janssen College of Tacloban, Inc. (SAJCTI) - College of Criminal Justice Education">
+    <meta name="keywords" content="SAJCTI, Saint Arnold, Janssen, College, Tacloban, Criminology, University, School, Philippines, Leyte, Bachelors, Degree">
+    <meta name="author" content="Emmanuel Valdueza">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@*@ViewData["Title"] -*@ SAJCTI</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
@@ -24,7 +27,7 @@
     <!-- Custom styles for this template -->
     <link href="@grayscaleCssVersion" rel="stylesheet">
     <link href="@customCssVersion" rel="stylesheet">
-   
+
 </head>
 
 <body id="page-top">
@@ -44,7 +47,26 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
             @* LOGO BELOW *@
-            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="~/imgs/janssen_seal_logo.png" style="height: 60px !important;" />  SAJCTI</a>
+            <a class="js-scroll-trigger logo-link" href="#page-top">
+                <div class="img-imitate" style="height: 60px;">
+                    <div class="logo-line"></div>
+                    <div class="logo-block-container">
+                        <div class="logo-block-1 fit-image" style="height: 60px; margin-right: 5px;">
+                            <img src="~/imgs/janssen_seal_logo.png" style="height: 100%;" />
+                        </div>
+                        <p class="logo-block-2">
+                            SAJCTI
+                        </p>
+                        <p class="logo-block-3">
+                            
+                                College of Criminal
+                                Justice Education
+                           
+                        </p>
+                    </div>
+                </div>
+            </a>
+
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
@@ -55,8 +77,8 @@
                         <a class="nav-link js-scroll-trigger" href="#about">About</a>
                     </li>
                     @*<li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-                        </li>*@
+                    <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                </li>*@
                     <li class="nav-item">
                         <a onclick="toggleRequirements()" class="nav-link reqCustom js-scroll-trigger" href="#requirements">Requirements</a>
                     </li>
@@ -135,7 +157,7 @@
     <!-- Custom scripts for this template -->
     <script src="@grayscaleJsVersion"></script>
     <script src="@siteJsVersion"></script>
-    
+
     <script>
         $(window).on("load", function () {
             window.location.href = "#"

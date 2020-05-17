@@ -28,9 +28,11 @@
 
     #mainNav .navbar-brand {
         color: #161616;
-        font-weight: 700;
-        padding: .1rem 0;
+        /*font-weight: 700;
+        padding: .1rem 0;*/
     }
+
+
 
     #mainNav .navbar-nav .nav-item:hover {
         color: fade(white, 80%);
@@ -53,7 +55,7 @@
     }
 
         #mainNav .navbar-brand {
-            padding: .5rem 0;
+            /*padding: .5rem 0;*/
             color: rgba(255, 255, 255, 0.7);
         }
 
@@ -77,6 +79,16 @@
 
             #mainNav.navbar-shrink .navbar-brand {
                 color: #161616;
+            }
+
+            #mainNav.navbar-shrink .logo-block-3{
+                color: #161616;
+            }
+            #mainNav.navbar-shrink .logo-block-2{
+                color: #161616;
+            }
+            #mainNav.navbar-shrink .logo-line {
+                background-color: #161616;
             }
 
             #mainNav.navbar-shrink .nav-link {
@@ -151,7 +163,6 @@
         font-size: 4rem;
         line-height: 4rem;
     }
-    
 }
 
 @media (min-width: 992px) {
