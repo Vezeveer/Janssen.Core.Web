@@ -4,61 +4,82 @@
     src: url('../castellar.ttf') format('truetype');
 }*/
 
-.headings-cs{
+.headings-cs {
     display: flex;
     justify-content: center;
 }
+
     .headings-cs > img {
         opacity: .5;
     }
+
 .heading-vision > img {
     height: 42px;
     width: 140px;
 }
-    .headings-cs > h2 {
-        font-family: Castellar;
-    }
+
+.headings-cs > h2 {
+    font-family: Castellar;
+}
+
 .heading-mission > img {
     opacity: .5;
     width: 100px;
     height: 37px;
 }
+
 .vine-mission {
     transform: scaleX(-1);
 }
 
-    .photobanner-crimlab {
-        height: 479px;
-        width: 2540px;
-        /*margin-bottom: 80px;*/
-    }
-    .photobanner-mootcourt{
-        height: 500px;
-        width: 1334px;
-    }
+.photobanner-crimlab {
+    height: 479px;
+    width: 2540px;
+    /*margin-bottom: 80px;*/
+}
 
+.photobanner-mootcourt {
+    height: 412px;
+    width: 1334px;
+}
+
+.photobanner-deftac {
+    height: 412px;
+    width: 1418px;
+}
 /*keyframe animations*/
-.first{
+.first {
     /*-webkit-animation: bannermove 60s linear infinite;
     -moz-animation: bannermove 60s linear infinite;
     -ms-animation: bannermove 60s linear infinite;
     -o-animation: bannermove 60s linear infinite;*/
-    animation: bannermove 60s linear infinite;
+    animation: bannermove 70s linear infinite;
 }
+
 .first-2 {
     /*-webkit-animation: bannermove 60s linear infinite;
     -moz-animation: bannermove 60s linear infinite;
     -ms-animation: bannermove 60s linear infinite;
     -o-animation: bannermove 60s linear infinite;*/
-    animation: bannermove-2 25s linear infinite;
+    animation: bannermove-2 35s linear infinite;
+}
+.first-3 {
+    /*-webkit-animation: bannermove 60s linear infinite;
+    -moz-animation: bannermove 60s linear infinite;
+    -ms-animation: bannermove 60s linear infinite;
+    -o-animation: bannermove 60s linear infinite;*/
+    animation: bannermove-3 50s linear infinite;
 }
 
 @keyframes bannermove {
-    0% { margin-left: 0px;}
+    0% {
+        margin-left: 0px;
+    }
 
     50% {
         margin-left: -1865px;
     }
+
     100% {
         margin-left: 0px;
     }
@@ -70,11 +91,25 @@
     }
 
     50% {
-        margin-left: -667px;
+        margin-left: -500px;
     }
 
     100% {
         margin-left: 0px;
+    }
+}
+
+@keyframes bannermove-3 {
+    0% {
+        margin-left: -709px;
+    }
+
+    50% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: -709px;
     }
 }
 
@@ -84,22 +119,51 @@
     vertical-align: middle;
 }
 
-.grid-container{
+.photobanner-crimelab-container {
     display: grid;
     grid-gap: 5px;
     width: 100%;
     height: 479px;
 }
+
+.photobanner-deftac-container {
+    display: grid;
+    grid-gap: 5px;
+    width: 618px;
+    height: 412px;
+}
+
+.deftac-box1 {
+    height: 206px;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    overflow: hidden;
+}
+.deftac-box2 {
+    height: 206px;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    overflow: hidden;
+}
+.deftac-box3 {
+    height: 206px;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    overflow: hidden;
+}
+
 .box1 {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
     overflow: hidden;
 }
+
 .box2 {
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;
     overflow: hidden;
 }
+
 .box3 {
     grid-column: 3 / span 1;
     grid-row: 2 / span 1;
@@ -112,7 +176,7 @@
     object-fit: cover;
 }
 
-#requirements{
+#requirements {
     display: none;
 }
 
@@ -139,6 +203,7 @@
         background-attachment: scroll;
         background-size: cover;
     }
+
     .mobile-image {
         display: none;
     }
@@ -188,7 +253,6 @@
     position: relative;
     border: 4px solid #Fff;
     animation: loader 2s infinite ease;
-    
 }
 
 .loader-inner {
