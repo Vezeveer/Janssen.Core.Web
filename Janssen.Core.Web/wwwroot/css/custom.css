@@ -19,8 +19,8 @@ body, html {
     }
 
 .heading-vision > img {
-    height: 42px;
-    width: 140px;
+    height: 38px;
+    width: 114px;
 }
 
 .headings-cs > h2, .heading-corevalues {
@@ -29,16 +29,20 @@ body, html {
 
 .heading-mission > img {
     opacity: .5;
-    width: 100px;
-    height: 37px;
+    width: 95px;
+    height: 32px;
 }
 
 .vine-mission {
     transform: scaleX(-1);
 }
 
+.crimlab-last-img{
+    height: 100%;
+}
+
 .photobanner-crimlab {
-    height: 479px;
+    height: 400px;
     width: 2540px;
     /*margin-bottom: 80px;*/
 }
@@ -58,7 +62,7 @@ body, html {
     -moz-animation: bannermove 60s linear infinite;
     -ms-animation: bannermove 60s linear infinite;
     -o-animation: bannermove 60s linear infinite;*/
-    animation: bannermove 70s linear infinite;
+    animation: bannermove 80s linear infinite;
 }
 
 .first-2 {
@@ -128,7 +132,7 @@ body, html {
     display: grid;
     grid-gap: 5px;
     width: 100%;
-    height: 479px;
+    height: 412px;
 }
 
 .photobanner-deftac-container {
@@ -221,6 +225,25 @@ body, html {
 
     .desktop-image {
         display: block;
+    }
+
+    /*CUSTOM*/
+    .photobanner-crimelab-container {
+        height: 450px;
+    }
+
+    .photobanner-crimlab {
+        height: 450px;
+    }
+
+    .photobanner-mootcourt {
+        height: 412px;
+        width: 1334px;
+    }
+
+    .photobanner-deftac {
+        height: 412px;
+        width: 1418px;
     }
 
     /*.fit-to-height {
@@ -317,3 +340,25 @@ body, html {
         height: 0%;
     }
 }
+
+
+/*SCROLL BAR CUSTOM*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(22, 22, 22, 0.1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 216, 0, 0.6);
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }

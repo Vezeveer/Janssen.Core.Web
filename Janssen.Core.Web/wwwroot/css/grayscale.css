@@ -81,12 +81,14 @@
                 color: #161616;
             }
 
-            #mainNav.navbar-shrink .logo-block-3{
+            #mainNav.navbar-shrink .logo-block-3 {
                 color: #161616;
             }
-            #mainNav.navbar-shrink .logo-block-2{
+
+            #mainNav.navbar-shrink .logo-block-2 {
                 color: #161616;
             }
+
             #mainNav.navbar-shrink .logo-line {
                 background-color: #161616;
             }
@@ -139,23 +141,6 @@
         max-width: 20rem;
         font-size: 1rem;
     }
-
-/*.logo-wide {
-    width: 100%;
-    float: left;
-}
-
-.logo-wide > div {
-    float: right;
-}
-
-.logo-narrow > p {
-    color: red !important;
-}
-
-.logo-narrow {
-    display: none !important;
-}*/
 
 
 @media (min-width: 768px) {
