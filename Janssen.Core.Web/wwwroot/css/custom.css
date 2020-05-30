@@ -9,6 +9,17 @@ body, html {
     margin: 0;
 }
 
+
+#gym-pic2, #gym-pic3, #gym-pic1 {
+    
+    overflow:hidden;
+    top: 0;
+    left: 0;
+}
+#gym-pic2, #gym-pic3 {
+    position: absolute;
+}
+
 .headings-cs {
     display: flex;
     justify-content: center;

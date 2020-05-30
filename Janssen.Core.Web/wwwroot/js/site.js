@@ -30,3 +30,18 @@ function enableScrolling() {
 }
 
 disableScrolling();
+
+// Image switch logic
+let tick = 0;
+switchImages();
+window.setInterval(function () {
+    switchImages();
+
+}, 15000);
+
+function switchImages() {
+    setTimeout(function () { $("#gym-pic2").fadeIn(); }, 5000);
+    setTimeout(function () { $("#gym-pic2").fadeOut() }, 10000);
+    setTimeout(function () { $("#gym-pic3").fadeIn() }, 10000);
+    setTimeout(function () { $("#gym-pic3").fadeOut() }, 15000);
+}
